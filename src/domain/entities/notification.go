@@ -1,9 +1,9 @@
 package domain
 
 type Notification struct {
-	LoanID    int32  `json:"loan_id"`
-	Title     string `json:"title"`
-	Status    string `json:"status"`
+	LoanID    int32  `json:"ID"`
+	Title     string `json:"Title"`
+	Status    string `json:"Status"`
 	Message   string `json:"message"`
 	Timestamp string `json:"timestamp"`
 }

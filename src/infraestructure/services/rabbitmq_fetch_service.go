@@ -15,7 +15,7 @@ func NewRabbitMQService() *RabbitMQService {
 }
 
 func (s *RabbitMQService) FetchAlerts() ([]map[string]interface{}, error) {
-	resp, err := http.Get("http://localhost:9090/notifications")
+	resp, err := http.Get("http://3.83.5.8:9090/notifications")
 	if err != nil {
 		log.Println("Error obteniendo alertas del consumidor:", err)
 		return nil, err

@@ -24,7 +24,6 @@ func NewDependencies() (*Dependencies, error) {
 
 	rabbitService := services.NewRabbitMQService()
 
-	// Crear servicio de publicación en la cola "notifications"
 	rabbitPublishServiceAPI2, err := services.NewRabbitMQPublishService("notifications")
 	if err != nil {
 		log.Fatal("Error iniciando RabbitMQ Publish Service para API2:", err)
